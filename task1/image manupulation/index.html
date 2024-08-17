@@ -1,23 +1,25 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Cat Image Gallery</title>
 </head>
 <body>
-    <h1>Cat image  galllery </h1>
-    <div class="gallery">
-        <img src="tiger.jpg" alt="tiger">
-        <img src="tiger.jpg" alt="tiger">
-        <img src="lion.jpg" alt="tiger">
-        <img src="lion.jpg" alt="tiger">
-        <img src="cat.jpeg" alt="tiger">
-        <img src="cat.jpeg" alt="tiger">
-        <img src="pather.jpeg" alt="tiger">
-        <img src="pather.jpeg" alt="tiger">
-        <img src="chita.jpeg" alt="tiger">
-        <img src="chita.jpeg" alt="tiger">
+    <h1>Cat Image Gallery</h1>
+    <div class="full-imag" id="fullbox">
+        <img src="tiger.jpg" alt="tiger" id="fullimg">
+        <span onclick="closefullimg()">X</span>
     </div>
+    <div class="gallery">
+        <img src="tiger.jpg" alt="tiger" onclick="openfullimg(this.src)">
+        <img src="lion.jpg" alt="lion"  onclick="openfullimg(this.src)">
+        <img src="cat.jpeg" alt="cat"  onclick="openfullimg(this.src)">
+        <img src="pather.jpeg" alt="panther"  onclick="openfullimg(this.src)">
+        <img src="chita.jpeg" alt="cheetah"  onclick="openfullimg(this.src)">
+        <img src="lax.jpg" alt="lynx"  onclick="openfullimg(this.src)">
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

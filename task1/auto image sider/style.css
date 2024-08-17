@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+body {
+    background-color: #a8a9a8;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: white;
+}
+.container {
+    width: 229px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border: 20px solid white;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
+}
+img {
+    width: 100%;
+}
+.wrapper {
+    width: 100%;
+    display: flex;
+    animation: slid 16s infinite ease-in-out;
+}
+@keyframes slid {
+    0%, 25% {
+        transform: translateX(0);
+    }
+    30%, 50% {
+        transform: translateX(-100%);
+    }
+    55%, 75% {
+        transform: translateX(-200%);
+    }
+    80%, 100% {
+        transform: translateX(-300%);
+    }
+}
